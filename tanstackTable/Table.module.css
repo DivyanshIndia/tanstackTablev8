@@ -1,0 +1,43 @@
+.container {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.tableStyle {
+    border: 2px solid rgb(196, 194, 194);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.tableStyle th,
+.tableStyle td {
+    text-align: left;
+}
+
+.tableStyle tfoot {
+    font-weight: 600;
+}
+
+.tableStyle td,
+.tableStyle th {
+    padding: 5px;
+    border-bottom: 2px solid rgb(198, 197, 197);
+}
+
+.tableStyle tr:hover {
+    background-color: aliceblue;
+}
+
+.searchBorder {
+    border-bottom: 3px solid rgb(198, 197, 197);
+    border-top: 3px solid rgb(198, 197, 197);
+
+}
