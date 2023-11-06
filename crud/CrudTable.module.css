@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.container table {
+  text-align: left;
+}
+
+.container table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.container tr {
+  border-bottom: 1px solid #ccc;
+}
+.container th,
+.container td {
+  text-align: left;
+  padding: 8px 10px;
+}
+
+.cFilter {
+  padding-left: 5px;
+  outline: none;
+  height: 25px;
+  border: 1px solid rgb(121, 128, 227);
+  border-radius: 3px;
+  background-color: rgb(234, 241, 248);
+}
+
+.addRow {
+  height: 40px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 2px solid violet;
+  color: white;
+  background-color: black;
+}
+
+.addRow:hover {
+  border: 3px solid violet;
+}

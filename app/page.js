@@ -1,10 +1,11 @@
 import React from "react";
-import Table from "../tanstackTable/Table";
+import Form from "@/crud/Form";
+import CrudTable from "@/crud/crudTable";
 
 const page = () => {
   return (
     <div>
-      <Table />
+      <CrudTable />
     </div>
   );
 };

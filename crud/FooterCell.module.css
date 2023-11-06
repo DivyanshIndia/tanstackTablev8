@@ -1,0 +1,10 @@
+.container button {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  height: 30px;
+  border-radius: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px solid rgb(175, 2, 2);
+}

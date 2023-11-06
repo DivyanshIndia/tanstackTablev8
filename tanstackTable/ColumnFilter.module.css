@@ -1,9 +1,8 @@
 .search input {
-    width: 100%;
-    border: none;
-    height: 30px;
-    background-color: transparent;
-    outline: none;
-    color: black;
-
+  width: 100%;
+  border: none;
+  height: 30px;
+  background-color: transparent;
+  outline: none;
+  color: black;
 }

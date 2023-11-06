@@ -1,18 +1,9 @@
 import React from "react";
-import styles from "./Filter.module.css";
+import styles from "./GlobalFilter.module.css";
 
-const Filter = ({ filter, setFilter, size }) => {
-  console.log(size);
+const GlobalFilter = ({ filter, setFilter, size }) => {
   return (
     <div className={styles.filter} style={{ width: `${size}px` }}>
-      <img
-        width="20"
-        height="20"
-        src="https://img.icons8.com/ios/50/search--v1.png"
-        alt="search--v1"
-      />
-      <p>Search</p>
-
       <input
         placeholder="Search record.."
         value={filter}
@@ -30,4 +21,4 @@ const Filter = ({ filter, setFilter, size }) => {
   );
 };
 
-export default Filter;
+export default GlobalFilter;

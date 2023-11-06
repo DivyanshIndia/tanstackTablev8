@@ -1,0 +1,57 @@
+
+
+.form {
+    
+    display: flex;
+    gap: 1rem;
+    padding: 10px;
+    align-items: center;
+    background-color: palevioletred;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(5, 5, 5, 0.695);
+    margin-bottom: 3px;
+
+}
+
+.form input {
+    outline: none;
+    border: none;
+    width: 70%;
+    height: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.form input:invalid {
+    border: 2px solid green;
+}
+
+.form input[type=submit] {
+    font-weight: bold;
+
+
+}
+
+.form input[type=submit]:hover {
+    background-color: azure;
+    border: 1px solid green;
+}
+
+.form small {
+    font-weight: bold;
+}
+
+.container span {
+    font-weight: bold;
+    position: absolute;
+    top:22%;
+    right: 33%;
+}
+
+.errors {
+    display: flex;
+    gap: 1rem;
+    color: red;
+
+}

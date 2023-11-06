@@ -1,0 +1,16 @@
+.filter {
+  width: max-content;
+  display: flex;
+  gap: 1rem;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+}
+
+.filter input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-weight: bold;
+}

@@ -1,0 +1,7 @@
+.tableCell {
+    border: 1px solid blue;
+    padding: 5px;
+    border-radius: 3px;
+    background-color: aliceblue;
+    font-weight: bold;
+}

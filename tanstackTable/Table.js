@@ -4,6 +4,7 @@ import {
   flexRender,
   getCoreRowModel,
   getFilteredRowModel,
+  getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
 import DATA from "./data.json";
@@ -60,17 +61,21 @@ const Table = () => {
   const [data, setData] = useState(DATA);
   const [columnFilters, setColumnFilters] = useState([]);
   const [filter, setFilter] = useState("");
+  const [sorting, setSorting] = useState([]);
   const table = useReactTable({
     data,
     columns,
     state: {
       columnFilters: columnFilters,
       globalFilter: filter,
+      sorting: sorting,
     },
     onGlobalFilterChange: setFilter,
     onColumnFiltersChange: setColumnFilters,
     getCoreRowModel: getCoreRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
+    getSortedRowModel: getSortedRowModel(),
+    onSortingChange: setSorting,
   });
 
   console.log(table.getFooterGroups());
@@ -87,7 +92,11 @@ const Table = () => {
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
               {headerGroup.headers.map((header) => (
-                <th key={header.id}>{header.column.columnDef.header}</th>
+                <th
+                  key={header.id}
+                >
+                  {header.column.columnDef.header}
+                </th>
               ))}
             </tr>
           ))}

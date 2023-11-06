@@ -3,7 +3,7 @@ import axios from "axios";
 import axiosRetry from "axios-retry";
 
 const apiClient = axios.create({
-  baseURL: "url",
+  baseURL: "https://fromandtable-default-rtdb.firebaseio.com/details.json",
   timeout: 10000,
 });
 
@@ -11,7 +11,7 @@ const apiClient = axios.create({
 axiosRetry(apiClient, { retries: 3, retryDelay: axiosRetry.exponentialDelay });
 
 
-apiClient.defaults.headers.common["Authorization"] = "Bearer token"; 
+// apiClient.defaults.headers.common["Authorization"] = "Bearer token"; 
 
 
 export const get = (url, params = {}) => {
